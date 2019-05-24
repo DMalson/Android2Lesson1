@@ -6,4 +6,20 @@
         android:orderInCategory="100"
         android:title="@string/action_settings"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/size_Plus"
+        android:orderInCategory="200"
+        android:title="@string/size_plus"
+        app:showAsAction="ifRoom"
+        android:iconTint="@color/ic_color"
+        android:icon="@drawable/ic_plus"
+        />
+    <item
+        android:id="@+id/size_Minus"
+        android:orderInCategory="300"
+        android:title="@string/size_minus"
+        app:showAsAction="ifRoom"
+        android:iconTint="@color/ic_color"
+        android:icon="@drawable/ic_minus"
+        />
 </menu>

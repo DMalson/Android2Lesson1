@@ -6,7 +6,10 @@
     <string name="nav_header_subtitle">DM Software LLC, 2019</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+    <string name="size_plus">Size + </string>
+    <string name="size_minus">Size - </string>
 
+    <string name="act_1">MainActivity</string>
     <string name="act_2">Activity2</string>
     <string name="act_3">Activity3</string>
     <string name="act_4">Activity4</string>
