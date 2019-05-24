@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.util.TypedValue;
 import android.view.View;
 import android.support.v4.view.GravityCompat;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -14,9 +15,14 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
+import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    private TextView textView;
+    private float textSize=14f;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +45,7 @@ public class MainActivity extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
+        textView=findViewById(R.id.textMain);
     }
 
     @Override
@@ -67,7 +74,14 @@ public class MainActivity extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            Toast toast = Toast.makeText(getApplicationContext(),
+                    Float.toString(textView.getTextSize()),Toast.LENGTH_SHORT);
+            toast.show();
             return true;
+        } else if (id == R.id.size_Plus) {
+            textView.setTextSize(TypedValue.COMPLEX_UNIT_SP,textSize++);
+        } else if (id == R.id.size_Minus){
+            textView.setTextSize(TypedValue.COMPLEX_UNIT_SP,textSize--);
         }
 
         return super.onOptionsItemSelected(item);
@@ -89,9 +103,12 @@ public class MainActivity extends AppCompatActivity
             Intent intent=new Intent(this,Activity4.class);
             startActivity(intent);
         } else if (id == R.id.nav_about) {
+            Intent intent=new Intent(this, ActivityAbout.class);
+            startActivity(intent);
 
         } else if (id == R.id.nav_feedback) {
-
+            Intent intent = new Intent(this,ActivityFeedBack.class);
+            startActivity(intent);
         }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);

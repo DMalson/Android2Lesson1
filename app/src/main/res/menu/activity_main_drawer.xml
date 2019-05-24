@@ -7,7 +7,8 @@
         <item
             android:id="@+id/act_2"
             android:icon="@drawable/ic_looks_2"
-            android:title="@string/act_2" />
+            android:title="@string/act_2"
+            />
         <item
             android:id="@+id/act_3"
             android:icon="@drawable/ic_looks_3"
