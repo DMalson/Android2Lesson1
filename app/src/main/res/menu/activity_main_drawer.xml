@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/act_2"
+            android:icon="@drawable/ic_looks_2"
+            android:title="@string/act_2" />
+        <item
+            android:id="@+id/act_3"
+            android:icon="@drawable/ic_looks_3"
+            android:title="@string/act_3" />
+        <item
+            android:id="@+id/act_4"
+            android:icon="@drawable/ic_looks_4"
+            android:title="@string/act_4" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_about"
+                android:title="@string/menu_about" />
+            <item
+                android:id="@+id/nav_feedback"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/menu_feedback" />
+        </menu>
+    </item>
+
+</menu>
