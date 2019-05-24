@@ -13,6 +13,8 @@
     <string name="menu_about">About</string>
     <string name="menu_feedback">Feedback</string>
     <string name="feedback_hint">Enter your feedback here</string>
+    <string name="feedback_ask">Please, write your feedback</string>
     <string name="txt_about">Dmitry Malov\nDM Software LLC, 2019</string>
+    <string name="feedback_sent">Feedback sent</string>
 
  </resources>
